@@ -2,6 +2,8 @@
 let assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH
 let basePath = process.env.NEXT_PUBLIC_BASE_PATH
 
+console.log("base path" , basePath)
+
 // let isGithubActions = process.env.BLUECHEESE_ACTIONS || false
 
 // if (isGithubActions) {
@@ -16,7 +18,7 @@ let basePath = process.env.NEXT_PUBLIC_BASE_PATH
 const nextConfig = {
    output: "export",
   //  assetPrefix: assetPrefix,
-  //  basePath: basePath,
+   basePath: basePath,
 }
 
 module.exports = nextConfig
