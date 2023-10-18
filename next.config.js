@@ -1,24 +1,30 @@
 /** @type {import('next').NextConfig} */
-let assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH
-let basePath = process.env.NEXT_PUBLIC_BASE_PATH
+let assetPrefix = ''
+let basePath = ''
 
-console.log("base path" , basePath)
 
-// let isGithubActions = process.env.BLUECHEESE_ACTIONS || false
+let isGithubActions = process.env.BLUECHEESE_ACTIONS || false
 
-// if (isGithubActions) {
-//     // trim off `<owner>/`
+console.log("bluechesse actions" , process.env.BLUECHEESE_ACTIONS)
+
+
+if (isGithubActions) {
+    // trim off `<owner>/`
   
-//     assetPrefix = `/bluechesse-sports-landing/`
-//     basePath = `/bluechesse-sports-landing` 
+    // assetPrefix = `/bluechesse-sports-landing/`
+    // basePath = `/bluechesse-sports-landing` 
+    images['loader'] = 'imgix'
+    images['loaderFile'] = './imgix.ts'
     
-//   }
+  }
 
 
 const nextConfig = {
    output: "export",
   //  assetPrefix: assetPrefix,
-   basePath: basePath,
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+  images: images
 }
 
 module.exports = nextConfig
