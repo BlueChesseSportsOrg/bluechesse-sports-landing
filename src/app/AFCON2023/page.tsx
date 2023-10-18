@@ -56,9 +56,9 @@ const cards = [
 export default function Afcon(){
     return (
       <div className="container mx-auto px-8 ">
-        <div className="flex flex-row md:flex-nowrap flex-wrap gap-4">
+        <div className="flex flex-row md:flex-nowrap flex-wrap gap-4 my-10">
           <div className="w-full lg:w-6/12">
-            <div className="max-w-xl">
+            <div className="max-w-xl mx-auto">
               <h1 className="text-white font-bold md:text-6xl md:leading-normal text-4xl leading-normal mb-3">
                 Let&apos;s play <span>&#x26BD;</span> in Abidjan!
               </h1>
@@ -118,7 +118,7 @@ export default function Afcon(){
           <div className="hidden w-6/12 relative lg:flex justify-center items-center">
             <div className="relative w-[90%] h-[30rem]">
               <Image
-                src={"/hero-image.png"}
+                src={`/hero-image.png`}
                 fill={true}
                 // width={850}
                 // height={500}

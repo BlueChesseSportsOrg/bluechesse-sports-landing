@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-let assetPrefix = ''
-let basePath = ''
+let assetPrefix = process.env.BASE_PATH
+let basePath = process.env.BASE_PATH
 
 let isGithubActions = process.env.BLUECHEESE_ACTIONS || false
 
@@ -14,7 +14,7 @@ if (isGithubActions) {
 
 
 const nextConfig = {
-   output: "export",
+   //output: "export",
    assetPrefix: assetPrefix,
    basePath: basePath,
 }

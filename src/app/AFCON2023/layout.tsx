@@ -11,7 +11,7 @@ export default function AfconLayout({
          <div className="flex flex-row justify-between items-center py-3 px-8">
            <div>
              <Image
-               src={"/bluecheese-logo-white.png"}
+               src={`/bluecheese-logo-white.png`}
                width={100}
                height={150}
                alt="blue chesse logo"
@@ -24,7 +24,7 @@ export default function AfconLayout({
            
          </div>
          {children}
-         <div className="w-full px-8 p-12 mt-10 flex justify-between flex-row md:flex-nowrap flex-wrap ">
+         <div className="w-full px-8 p-12 mt-10 flex justify-between border-t  border-[#ffffff14] flex-row md:flex-nowrap flex-wrap ">
            <div className='mt-3'>
                <h6 className='text-white font-medium'>© DIHGroup 2023</h6>
            </div>

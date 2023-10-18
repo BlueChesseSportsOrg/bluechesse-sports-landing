@@ -6,49 +6,49 @@ const benefits = [
         title: "Tickets",
         description: "Enjoy an exclusive viewing experience with top-tier seats for every tournament game, giving you a front-row view of the excitement.",
         order: "order-0",
-        img: ""
+        img: "/tickets.png"
     },
     {
         title: "Accommodation",
         description: "Stay in comfortable hotels and apartments in the heart of Abidjan, close to both the stadium and the city's main attractions.",
         order: "order-1",
-        img: ""
+        img: "/accommodation.png"
     },
     {
         title: "Transportation",
         description: "Travel in style with private transportation to and from the stadium, as well as airport transfers from the airport.",
         order: "order-0",
-        img: ""
+        img: "/transportation.png"
     },
     {
         title: "Feeding",
         description: "Savor the flavors of Cote D'Ivoire with delicious meals provided throughout the trip, including breakfasts, lunches, and dinners at local restaurants and cafes",
         order: "order-1",
-        img: ""
+        img: "/feeding.png"
     },
     {
         title: "After Game Parties",
         description: "Celebrate every match in style with exclusive access to after-game parties featuring local music and dance styles, like the electrifying Coupe Decale.",
         order: "order-0",
-        img: ""
+        img: "/transportation.png"
     },
     {
         title: "City tours",
         description: "Discover the beauty and culture of Cote D'Ivoire with guided city tours to popular hotspots and hidden gems.",
         order: "order-1",
-        img: ""
+        img: "/city-tours.png"
     },
     {
         title: "Work Remotely",
         description: "Stay connected with reliable internet access throughout the trip, perfect for remote work or staying in touch with loved ones back home.",
         order: "order-0",
-        img: ""
+        img: "/internet-access.png"
     },
     {
         title: "Fan Merch",
         description: "Show off your team spirit with official fan merchandise included in the package.",
         order: "order-1",
-        img: ""
+        img: "/fan-merch.png"
     },
 ]
 
@@ -56,7 +56,36 @@ export default function ReserveSpot(){
     return (
       <div>
         <div className="container mx-auto px-8 ">
-          <div className="flex flex-col py-10">
+        <div className="flex flex-row md:flex-nowrap flex-wrap gap-4 py-8">
+          <div className="w-full lg:w-6/12 flex items-center">
+            <div className="max-w-xl">
+              <h1 className="text-white font-bold md:text-3xl md:leading-normal text-3xl leading-normal mb-3">
+              Are you ready to experience the ultimate African football journey?
+              </h1>
+              <div className="flex flex-row gap-1 mb-3 w-full">
+                {/* <Image src={"/ci.svg"} alt="Ivorian Flag" width={18} height={10} /> */}
+                <h2 className="text-[#ffde59] font-normal md:text-lg md:leading-normal text-base leading-normal">
+                Reserve your spot now for this once-in-a-lifetime trip to Abidjan, Côte D&apos;Ivoire and witness the magic of the African Cup of Nations!
+                </h2>
+              </div>
+             
+              
+            </div>
+          </div>
+          <div className="hidden w-6/12 relative lg:flex justify-center items-center">
+            <div className="relative w-[90%] h-[30rem]">
+              <Image
+                src={`/AkawabaMascot.png`}
+                fill={true}
+                // width={850}
+                // height={500}
+                alt="football fans"
+                className='rounded-[12px]'
+              />
+            </div>
+          </div>
+        </div>
+          {/* <div className="flex flex-col py-10">
             <div className="w-8/12 mx-auto text-center">
               <div>
                 <h1 className="text-white font-bold md:text-4xl md:leading-normal text-4xl leading-normal mb-3">
@@ -70,12 +99,12 @@ export default function ReserveSpot(){
                 </h2>
               </div>
             </div>
-          </div>
-          <div className="flex flex-col py-8">
+          </div> */}
+          <div className="flex flex-col mt-8 py-8">
             {benefits.map((item, index) => {
               return (
                 <div key={"benefits--" + index} className="flex flex-row my-8">
-                  <div className={`w-6/12  ${item.order}`}>
+                  <div className={`w-6/12 flex items-center  ${item.order}`}>
                     <div className="max-w-xl">
                       <h2 className="text-xl text-white font-bold mb-1">
                         {item.title}
@@ -85,7 +114,15 @@ export default function ReserveSpot(){
                       </p>
                     </div>
                   </div>
-                  <div className="w-6/12"></div>
+                  <div className="w-6/12">
+                      <div className='relative w-[90%] h-[30rem]'>
+                          <Image 
+                            src={item.img}
+                            alt="Benefits"
+                            fill={true}
+                          />
+                      </div>
+                  </div>
                 </div>
               );
             })}
@@ -313,7 +350,7 @@ export default function ReserveSpot(){
             <div className="flex flex-col py-6">
                 <div className="mb-3 mx-auto mt-8">
                    <Image
-                     src="/30.png"
+                     src={`/30.png`}
                      width={70}
                      height={69}
                      alt="30 days"
