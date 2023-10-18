@@ -151,9 +151,9 @@ export default function Afcon(){
           </div>
           <div className="flex flex-row justify-center gap-5 flex-wrap mb-5">
           {
-                cards.map((item) => {
+                cards.map((item,index) => {
                     return (
-                    <div key={"index--" + item} className="w-full h-full max-w-[22rem] bg-[#252525] border border-[#252525] rounded-[12px] shadow">
+                    <div key={"index--" + item.name} className="w-full flex flex-col max-w-[22rem] bg-[#252525] border border-[#252525] rounded-[12px] shadow">
                         <div className="px-5 pb-5">
                              <div className="relative w-[214px] h-[214px] mx-auto mt-8 mb-3">
                                  <Image 
