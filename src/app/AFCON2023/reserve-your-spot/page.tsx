@@ -370,12 +370,12 @@ export default function ReserveSpot(){
                      alt="30 days"
                    />
                 </div>
-                <h6 className='text-base font-medium text-center mb-3'>Try BlueCheese for 30 days and if it isn&apos;t for you get refunded - See 
+                <h6 className='text-base font-medium text-center mb-3 text-black'>Try BlueCheese for 30 days and if it isn&apos;t for you get refunded - See 
                    <Link className="cursor-pointer text-blue-500  text-base " href={"#"}> Terms & Conditions </Link>
                  </h6>
-                 <h6 className='text-base font-medium text-center'>Limited spots available - don&apos;t miss out on this amazing opportunity!
+                 <h6 className='text-base font-medium text-center text-black'>Limited spots available - don&apos;t miss out on this amazing opportunity!
                  </h6>
-                 <h6 className='text-base font-medium text-center'>Contact us today to learn more!
+                 <h6 className='text-base font-medium text-center text-black'>Contact us today to learn more!
                  </h6>
             </div>
           </div>
