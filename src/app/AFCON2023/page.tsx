@@ -55,7 +55,7 @@ const cards = [
 
 export default function Afcon(){
     return (
-      <div className="container mx-auto px-4 ">
+      <div className="container mx-auto px-8 ">
         <div className="flex flex-row md:flex-nowrap flex-wrap gap-4">
           <div className="w-full lg:w-6/12">
             <div className="max-w-xl">
@@ -194,31 +194,7 @@ export default function Afcon(){
               </div>
           </div>
         </div>
-        <div className="w-full mt-10 flex flex-row md:flex-nowrap flex-wrap border-t  border-[#ffffff14]">
-          <div className="p-1 mt-3 flex">
-            <a className="text-[#ffffffc9] fomt-semibold text-sm cursor-pointer">
-              FAN MERCH
-            </a>
-            <div className="border-r ml-2"></div>
-          </div>
-          <div className="p-1 mt-3 flex">
-            <a className="text-[#ffffffc9] fomt-semibold text-sm cursor-pointer">
-              UCL
-            </a>
-            <div className="border-r ml-2"></div>
-          </div>
-          <div className="p-1 mt-3 flex">
-            <a className="text-[#ffffffc9] fomt-semibold text-sm cursor-pointer">
-              PREMIERSHIP
-            </a>
-            <div className="border-r ml-2"></div>
-          </div>
-          <div className="p-1 mt-3 flex">
-            <a className="text-[#ffffffc9] fomt-semibold text-sm cursor-pointer">
-              LA LIGA
-            </a>
-          </div>
-        </div>
+        
       </div>
     );
 }
