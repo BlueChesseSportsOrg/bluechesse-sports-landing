@@ -6,49 +6,65 @@ const benefits = [
         title: "Tickets",
         description: "Enjoy an exclusive viewing experience with top-tier seats for every tournament game, giving you a front-row view of the excitement.",
         order: "order-0",
-        img: "/tickets.png"
+        img: "/tickets.png",
+        height: "10rem",  
+        width: "80%"
     },
     {
         title: "Accommodation",
         description: "Stay in comfortable hotels and apartments in the heart of Abidjan, close to both the stadium and the city's main attractions.",
         order: "order-1",
-        img: "/accommodation.png"
+        img: "/accommodation.png",
+        width: "95%",
+        height: "20rem"
     },
     {
         title: "Transportation",
         description: "Travel in style with private transportation to and from the stadium, as well as airport transfers from the airport.",
         order: "order-0",
-        img: "/transportation.png"
+        img: "/transportation.png",
+        width: "95%",
+        height: "22rem"
     },
     {
         title: "Feeding",
         description: "Savor the flavors of Cote D'Ivoire with delicious meals provided throughout the trip, including breakfasts, lunches, and dinners at local restaurants and cafes",
         order: "order-1",
-        img: "/feeding.png"
+        img: "/feeding.png",
+        width: "95%",
+        height: "10rem"
     },
     {
         title: "After Game Parties",
         description: "Celebrate every match in style with exclusive access to after-game parties featuring local music and dance styles, like the electrifying Coupe Decale.",
         order: "order-0",
-        img: "/transportation.png"
+        img: "/transportation.png",
+        width: "95%",
+        height: "22rem"
     },
     {
         title: "City tours",
         description: "Discover the beauty and culture of Cote D'Ivoire with guided city tours to popular hotspots and hidden gems.",
         order: "order-1",
-        img: "/city-tours.png"
+        img: "/city-tours.png",
+        width: "95%",
+        height: "30rem"
     },
     {
         title: "Work Remotely",
         description: "Stay connected with reliable internet access throughout the trip, perfect for remote work or staying in touch with loved ones back home.",
         order: "order-0",
-        img: "/internet-access.png"
+        img: "/internet-access.png",
+        height: "16rem",
+        width: "95%"
     },
     {
         title: "Fan Merch",
         description: "Show off your team spirit with official fan merchandise included in the package.",
         order: "order-1",
-        img: "/fan-merch.png"
+        img: "/fan-merch.png",
+        height:"16rem",
+        width: "95%"
     },
 ]
 
@@ -100,11 +116,11 @@ export default function ReserveSpot(){
               </div>
             </div>
           </div> */}
-          <div className="flex flex-col mt-8 py-8">
+          <div className="flex flex-col mt-8  py-8">
             {benefits.map((item, index) => {
               return (
-                <div key={"benefits--" + index} className="flex flex-row my-8">
-                  <div className={`w-6/12 flex items-center  ${item.order}`}>
+                <div key={"benefits--" + index} className="flex gap-4 md:flex-nowrap flex-wrap flex-row my-16">
+                  <div className={`md:w-6/12 w-full flex items-center  ${item.order}`}>
                     <div className="max-w-xl">
                       <h2 className="text-xl text-white font-bold mb-1">
                         {item.title}
@@ -114,8 +130,8 @@ export default function ReserveSpot(){
                       </p>
                     </div>
                   </div>
-                  <div className="w-6/12">
-                      <div className='relative w-[90%] h-[30rem]'>
+                  <div className="md:w-6/12 w-full">
+                      <div className={`relative`} style={{height: item.height , width: item.width}}>
                           <Image 
                             src={item.img}
                             alt="Benefits"
@@ -133,10 +149,10 @@ export default function ReserveSpot(){
             <h1 className="text-black text-center font-medium md:text-3xl md:leading-normal text-3xl leading-normal my-8">
               Ready to reserve your spot?
             </h1>
-            <div className="flex flex-row justify-center gap-3">
+            <div className="flex flex-row flex-wrap justify-center gap-3">
               {/* card 1 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
-                <div className="px-5 pb-5">
+                <div className="px-5 pb-5 text-black">
                   <div className="flex flex-row justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
                     <div>
                       <h6 className="font-bold text-base">
@@ -202,11 +218,9 @@ export default function ReserveSpot(){
               {/* card 2 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
                 <div className="relative">
-                  <div className="">
-                    <Image src={`/badge.png`} className='absolute right-[7rem] top-[-1rem]' height={50} width={140} alt="badge" />
-                  </div>
+                    <Image src={`/badge.png`} className='absolute left-[50%] top-[50%]' height={50} width={140} alt="badge" style={{transform: "translate(-50%, -50%)"}} />
                 </div>
-                <div className="px-5 pb-5">
+                <div className="px-5 pb-5 text-black">
                   <div className="flex flex-row items-stretch justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
                     <div>
                       <h6 className="font-bold text-base">Basic Plan</h6>
@@ -223,7 +237,7 @@ export default function ReserveSpot(){
                     <p className="text-sm font-light mb-3">
                       Our non-member services package includes:
                     </p> */}
-                    <ul className="list-disc ml-4 mb-4">
+                    <ul className="list-disc ml-4 mb-4 text-black">
                       <li className="text-sm font-light mb-2">
                         Become a Blue Cheese member
                       </li>
@@ -275,7 +289,7 @@ export default function ReserveSpot(){
               {/* card 2 */}
               {/* card 3 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
-                <div className="px-5 pb-5">
+                <div className="px-5 pb-5 text-black">
                   <div className="flex flex-row items-stretch justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
                     <div>
                       <h6 className="font-bold text-base">VIP Plan</h6>
@@ -292,7 +306,7 @@ export default function ReserveSpot(){
                     <p className="text-sm font-light mb-3">
                       Our non-member services package includes:
                     </p> */}
-                    <ul className="list-disc ml-4 mb-4">
+                    <ul className="list-disc ml-4 mb-4 text-black">
                       <li className="text-sm font-light mb-2">
                         Become a Blue Cheese member
                       </li>

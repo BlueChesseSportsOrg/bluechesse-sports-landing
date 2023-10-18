@@ -90,7 +90,7 @@ export default function Afcon(){
                   {activities.map((item, index) => {
                     return (
                       <div
-                        className="flex flex-row gap-2 mb-1 md:w-2/5 w-full"
+                        className="flex flex-row gap-2 mb-1 md:w-2/5 "
                         key={item.name + "___" + index}
                       >
                         {item.icon}
@@ -141,7 +141,7 @@ export default function Afcon(){
         </div>
         <div className="flex flex-col pb-8 pt-[4rem]">
           <div className="flex flex-row justify-center  mb-8">
-            <div className="w-7/12 text-center ">
+            <div className="w-full md:w-7/12 text-center ">
               <h6 className="text-white font-medium  text-lg ">
                 We are a community of sports fans and fitness enthusiasts ,
                 families ,entrepreneurs and creators utilizing sports as a force
