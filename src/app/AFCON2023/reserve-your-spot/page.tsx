@@ -75,7 +75,7 @@ export default function ReserveSpot(){
           <div className="hidden w-6/12 relative lg:flex justify-center items-center">
             <div className="relative w-[90%] h-[30rem]">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/AkawabaMascot.png`}
+                src={`/AkawabaMascot.png`}
                 fill={true}
                 // width={850}
                 // height={500}
@@ -117,7 +117,7 @@ export default function ReserveSpot(){
                   <div className="w-6/12">
                       <div className='relative w-[90%] h-[30rem]'>
                           <Image 
-                            src={`${process.env.NEXT_PUBLIC_BASE_PATH}` + item.img}
+                            src={item.img}
                             alt="Benefits"
                             fill={true}
                           />
@@ -203,7 +203,7 @@ export default function ReserveSpot(){
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
                 <div className="relative">
                   <div className="">
-                    <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/badge.png`} className='absolute right-[7rem] top-[-1rem]' height={50} width={140} alt="badge" />
+                    <Image src={`/badge.png`} className='absolute right-[7rem] top-[-1rem]' height={50} width={140} alt="badge" />
                   </div>
                 </div>
                 <div className="px-5 pb-5">
@@ -350,7 +350,7 @@ export default function ReserveSpot(){
             <div className="flex flex-col py-6">
                 <div className="mb-3 mx-auto mt-8">
                    <Image
-                     src={`${process.env.NEXT_PUBLIC_BASE_PATH}/30.png`}
+                     src={`/30.png`}
                      width={70}
                      height={69}
                      alt="30 days"

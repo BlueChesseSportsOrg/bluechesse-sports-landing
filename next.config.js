@@ -1,9 +1,13 @@
 /** @type {import('next').NextConfig} */
 let assetPrefix = ''
 let basePath = ''
-
+let images = {
+  loader: 'default',
+}
 
 let isGithubActions = process.env.BLUECHEESE_ACTIONS || false
+
+
 
 console.log("bluechesse actions" , process.env.BLUECHEESE_ACTIONS)
 
@@ -20,7 +24,7 @@ if (isGithubActions) {
 
 
 const nextConfig = {
-   output: "export",
+  //  output: "export",
   //  assetPrefix: assetPrefix,
   assetPrefix: assetPrefix,
   basePath: basePath,

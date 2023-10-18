@@ -46,11 +46,23 @@ const activities = [
 
 const cards = [
     {
-        img: "",
-        description: "",
-        name: "",
-        posiition: ""
-    }
+        img: "/GregSailor.jpeg",
+        description: "Blue Chesse is my preferred sports and fitness hub. I get access to curated sailing events ,which helps me plan throughout the year. It’s also a great way to connect with other professional sailors",
+        name: "Greg, Engineer & Sailor",
+        location: "San Francisco"
+    },
+    {
+      img: "/MariaPhysio.jpeg",
+      description: " What I love about Blue Chesse is the community of health and fitness enthusiasts it connects me with. I recommend it regularly to my patients to help them gain fitness in a communal way",
+      name: "Maria, Physiotherapist",
+      location: "Mexico City"
+    },
+    {
+      img: "/BarryBanker.jpeg",
+      description: "With Blue Chesse I’ll be watching my first UEFA Champions League game next year. It’s a dream come true. I like that I’m also able to curate a fitness lifestyle with my family",
+      name: "Barry, Banker",
+      location: "Johannesburg"
+    },
 ]  
 
 export default function Afcon(){
@@ -118,7 +130,7 @@ export default function Afcon(){
           <div className="hidden w-6/12 relative lg:flex justify-center items-center">
             <div className="relative w-[90%] h-[30rem]">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero-image.png`}
+                src={`/hero-image.png`}
                 fill={true}
                 // width={850}
                 // height={500}
@@ -139,13 +151,13 @@ export default function Afcon(){
           </div>
           <div className="flex flex-row justify-center gap-5 flex-wrap mb-5">
           {
-                [1,2,3].map((item) => {
+                cards.map((item) => {
                     return (
                     <div key={"index--" + item} className="w-full h-full max-w-[22rem] bg-[#252525] border border-[#252525] rounded-[12px] shadow">
                         <div className="px-5 pb-5">
                              <div className="relative w-[214px] h-[214px] mx-auto mt-8 mb-3">
                                  <Image 
-                                   src={`${process.env.NEXT_PUBLIC_BASE_PATH}/placeholder-2.jpg`}
+                                   src={item.img}
                                    fill={true}
                                    alt="card image"
                                    className="rounded-[12px]"
@@ -153,12 +165,12 @@ export default function Afcon(){
                             </div>
                             <div className="py-5 text-center">
                               <p className="text-base font-medium text-white">
-                              The process of opening a solo 401k used to be extremely complex, and you had to do most of the administration work yourself… I don’t normally get excited about retirement plans, but Carry is building something I’ve wanted to exist for a long time.
+                                &quot;{item.description}&quot;
                               </p>
                             </div>
                              <div className="py-4 text-center">
-                                 <p className="text-white mb-1 font-medium">Gloria Sam</p>
-                                 <p className="text-white mb-2 font-medium">Financial Advisor</p>
+                                 <p className="text-white mb-1 font-medium">{item.name}</p>
+                                 <p className="text-white mb-2 font-medium">{item.location}</p>
                              </div>
                           
                         </div>
