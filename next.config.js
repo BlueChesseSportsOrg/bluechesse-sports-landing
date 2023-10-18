@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-let assetPrefix = process.env.BASE_PATH
-let basePath = process.env.BASE_PATH
+let assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH
+let basePath = process.env.NEXT_PUBLIC_BASE_PATH
 
 // let isGithubActions = process.env.BLUECHEESE_ACTIONS || false
 
@@ -15,8 +15,8 @@ let basePath = process.env.BASE_PATH
 
 const nextConfig = {
    output: "export",
-   assetPrefix: assetPrefix,
-   basePath: basePath,
+  //  assetPrefix: assetPrefix,
+  //  basePath: basePath,
 }
 
 module.exports = nextConfig

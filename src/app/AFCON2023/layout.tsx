@@ -11,7 +11,7 @@ export default function AfconLayout({
          <div className="flex flex-row justify-between items-center py-3 px-8">
            <div>
              <Image
-               src={`/bluecheese-logo-white.png`}
+               src={`${process.env.NEXT_PUBLIC_BASE_PATH}/bluecheese-logo-white.png`}
                width={100}
                height={150}
                alt="blue chesse logo"

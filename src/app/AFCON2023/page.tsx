@@ -118,7 +118,7 @@ export default function Afcon(){
           <div className="hidden w-6/12 relative lg:flex justify-center items-center">
             <div className="relative w-[90%] h-[30rem]">
               <Image
-                src={`/hero-image.png`}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero-image.png`}
                 fill={true}
                 // width={850}
                 // height={500}
@@ -145,7 +145,7 @@ export default function Afcon(){
                         <div className="px-5 pb-5">
                              <div className="relative w-[214px] h-[214px] mx-auto mt-8 mb-3">
                                  <Image 
-                                   src="/placeholder-2.jpg"
+                                   src={`${process.env.NEXT_PUBLIC_BASE_PATH}/placeholder-2.jpg`}
                                    fill={true}
                                    alt="card image"
                                    className="rounded-[12px]"
