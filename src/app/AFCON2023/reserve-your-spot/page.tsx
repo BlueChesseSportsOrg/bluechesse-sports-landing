@@ -5,66 +5,66 @@ const benefits = [
     {
         title: "Tickets",
         description: "Enjoy an exclusive viewing experience with top-tier seats for every tournament game, giving you a front-row view of the excitement.",
-        order: "order-0",
+        order: "md:order-none order-1",
         img: "/tickets.png",
-        height: "10rem",  
-        width: "80%"
+        height: "h-[12rem]",  
+        width: "md:w-[80%]"
     },
     {
         title: "Accommodation",
         description: "Stay in comfortable hotels and apartments in the heart of Abidjan, close to both the stadium and the city's main attractions.",
-        order: "order-1",
+        order: "md:order-1 order-1",
         img: "/accommodation.png",
-        width: "95%",
-        height: "20rem"
+        width: "md:w-[95%]",
+        height: "h-[20rem]"
     },
     {
         title: "Transportation",
         description: "Travel in style with private transportation to and from the stadium, as well as airport transfers from the airport.",
-        order: "order-0",
+        order: "md:order-none order-1",
         img: "/transportation.png",
-        width: "95%",
-        height: "22rem"
+        width: "md:w-[95%]",
+        height: "h-[20rem]"
     },
     {
         title: "Feeding",
         description: "Savor the flavors of Cote D'Ivoire with delicious meals provided throughout the trip, including breakfasts, lunches, and dinners at local restaurants and cafes",
-        order: "order-1",
+        order: "md:order-1 order-1",
         img: "/feeding.png",
-        width: "95%",
-        height: "10rem"
+        width: "md:w-[95%]",
+        height: "h-[10rem]"
     },
     {
         title: "After Game Parties",
         description: "Celebrate every match in style with exclusive access to after-game parties featuring local music and dance styles, like the electrifying Coupe Decale.",
-        order: "order-0",
+        order: "md:order-none order-1",
         img: "/transportation.png",
-        width: "95%",
-        height: "22rem"
+        width: "md:w-[95%]",
+        height: "h-[22rem]"
     },
     {
         title: "City tours",
         description: "Discover the beauty and culture of Cote D'Ivoire with guided city tours to popular hotspots and hidden gems.",
-        order: "order-1",
+        order: "md:order-1 order-1",
         img: "/city-tours.png",
-        width: "95%",
-        height: "30rem"
+        width: "md:w-[80%]",
+        height: "h-[22rem]"
     },
     {
         title: "Work Remotely",
         description: "Stay connected with reliable internet access throughout the trip, perfect for remote work or staying in touch with loved ones back home.",
-        order: "order-0",
+        order: "md:order-none order-1",
         img: "/internet-access.png",
-        height: "16rem",
-        width: "95%"
+        height: "h-[12rem]",
+        width: "md:w-[80%]"
     },
     {
         title: "Fan Merch",
         description: "Show off your team spirit with official fan merchandise included in the package.",
-        order: "order-1",
+        order: "md:order-1 order-1",
         img: "/fan-merch.png",
-        height:"16rem",
-        width: "95%"
+        height:"h-[12rem]",
+        width: "md:w-[80%]"
     },
 ]
 
@@ -73,14 +73,14 @@ export default function ReserveSpot(){
       <div>
         <div className="container mx-auto px-8 ">
         <div className="flex flex-row md:flex-nowrap flex-wrap gap-4 py-8">
-          <div className="w-full lg:w-6/12 flex items-center">
+          <div className="w-full lg:w-6/12 lg:order-none  order-1 flex items-center">
             <div className="max-w-xl">
               <h1 className="text-white font-bold md:text-3xl md:leading-normal text-3xl leading-normal mb-3">
               Are you ready to experience the ultimate African football journey?
               </h1>
               <div className="flex flex-row gap-1 mb-3 w-full">
                 {/* <Image src={"/ci.svg"} alt="Ivorian Flag" width={18} height={10} /> */}
-                <h2 className="text-[#ffde59] font-normal md:text-lg md:leading-normal text-base leading-normal">
+                <h2 className="text-[#ffde59] font-normal md:text-lg md:leading-normal text-sm leading-normal">
                 Reserve your spot now for this once-in-a-lifetime trip to Abidjan, Côte D&apos;Ivoire and witness the magic of the African Cup of Nations!
                 </h2>
               </div>
@@ -88,10 +88,10 @@ export default function ReserveSpot(){
               
             </div>
           </div>
-          <div className="hidden w-6/12 relative lg:flex justify-center items-center">
-            <div className="relative w-[90%] h-[30rem]">
+          <div className="w-full lg:w-6/12 relative lg:flex justify-center items-center">
+            <div className="relative lg:w-[90%]  w-full  lg:h-[30rem] h-[22rem]">
               <Image
-                src={`/AkawabaMascot.png`}
+                src={`/akwaba.png`}
                 fill={true}
                 // width={850}
                 // height={500}
@@ -116,22 +116,22 @@ export default function ReserveSpot(){
               </div>
             </div>
           </div> */}
-          <div className="flex flex-col mt-8  py-8">
+          <div className="flex flex-col gap-12 mt-8  py-8">
             {benefits.map((item, index) => {
               return (
-                <div key={"benefits--" + index} className="flex gap-4 md:flex-nowrap flex-wrap flex-row my-16">
-                  <div className={`md:w-6/12 w-full flex items-center  ${item.order}`}>
+                <div key={"benefits--" + index} className="flex  md:flex-nowrap flex-wrap flex-row my-16">
+                  <div className={`md:w-6/12 w-full flex   ${item.order}`}>
                     <div className="max-w-xl">
                       <h2 className="text-xl text-white font-bold mb-1">
                         {item.title}
                       </h2>
-                      <p className="text-white font-medium">
+                      <p className="text-white font-light">
                         {item.description}
                       </p>
                     </div>
                   </div>
-                  <div className="md:w-6/12 w-full">
-                      <div className={`relative`} style={{height: item.height , width: item.width}}>
+                  <div className="md:w-6/12 w-full md:mb-0 mb-4">
+                      <div className={`relative ${item.height} ${item.width}`} >
                           <Image 
                             src={item.img}
                             alt="Benefits"
@@ -149,7 +149,7 @@ export default function ReserveSpot(){
             <h1 className="text-black text-center font-medium md:text-3xl md:leading-normal text-3xl leading-normal my-8">
               Ready to reserve your spot?
             </h1>
-            <div className="flex flex-row flex-wrap justify-center gap-3">
+            <div className="flex flex-row gap-16 flex-wrap justify-center">
               {/* card 1 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
                 <div className="px-5 pb-5 text-black">
@@ -191,25 +191,11 @@ export default function ReserveSpot(){
                   </div>
                   <div className="py-4 mt-16 text-center">
                     <Link
-                      className="text-white font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
+                      className="text-white font-medium text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"/AFCON2023/reserve-your-spot"}
                     >
                       Select non-member services
-                      <svg
-                        className="w-4 h-4 ml-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
+                      
                     </Link>
                   </div>
                 </div>
@@ -263,25 +249,11 @@ export default function ReserveSpot(){
                   </div>
                   <div className="py-4 mt-[6rem] text-center">
                     <Link
-                      className="text-white font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
+                      className="text-white font-medium text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"/AFCON2023/reserve-your-spot"}
                     >
                       Select Basic Plan
-                      <svg
-                        className="w-4 h-4 ml-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
+                      
                     </Link>
                   </div>
                 </div>
@@ -336,25 +308,11 @@ export default function ReserveSpot(){
                   </div>
                   <div className="py-4 mt-8 text-center">
                     <Link
-                      className="text-white font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
+                      className="text-white font-medium text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"/AFCON2023/reserve-your-spot"}
                     >
                       Select VIP Plan
-                      <svg
-                        className="w-4 h-4 ml-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
+                      
                     </Link>
                   </div>
                 </div>

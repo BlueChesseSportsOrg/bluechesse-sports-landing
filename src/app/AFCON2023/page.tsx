@@ -69,7 +69,7 @@ export default function Afcon(){
     return (
       <div className="container mx-auto px-8 ">
         <div className="flex flex-row md:flex-nowrap flex-wrap gap-4 my-10">
-          <div className="w-full lg:w-6/12">
+          <div className="w-full lg:w-6/12 md:order-none  order-1">
             <div className="max-w-xl mx-auto">
               <h1 className="text-white font-bold md:text-6xl md:leading-normal text-4xl leading-normal mb-3">
                 Let&apos;s play <span>&#x26BD;</span> in Abidjan!
@@ -104,31 +104,17 @@ export default function Afcon(){
               </div>
               <div className="mt-8 mb-4">
                 <Link
-                  className="text-[#131517] font-semibold text-base  bg-white  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
+                  className="text-[#131517] font-medium text-base  bg-white  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                   href={"/AFCON2023/reserve-your-spot"}
                 >
                   Reserve Your Spot
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
+                  
                 </Link>
               </div>
             </div>
           </div>
-          <div className="hidden w-6/12 relative lg:flex justify-center items-center">
-            <div className="relative w-[90%] h-[30rem]">
+          <div className="w-full md:w-6/12  relative lg:flex justify-center items-center">
+            <div className="relative md:w-[90%]  w-full md:h-[30rem] h-[16rem]">
               <Image
                 src={`/hero-image.png`}
                 fill={true}
@@ -139,7 +125,7 @@ export default function Afcon(){
             </div>
           </div>
         </div>
-        <div className="flex flex-col pb-8 pt-[4rem]">
+        {/* <div className="flex flex-col pb-8 pt-[4rem]">
           <div className="flex flex-row justify-center  mb-8">
             <div className="w-full md:w-7/12 text-center ">
               <h6 className="text-white font-medium  text-lg ">
@@ -187,25 +173,10 @@ export default function Afcon(){
                   href={"/AFCON2023/reserve-your-spot"}
                 >
                   Join our community
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
                 </Link>
               </div>
           </div>
-        </div>
+        </div> */}
         
       </div>
     );
