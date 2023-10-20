@@ -9,19 +9,19 @@ const poppins = Poppins({ subsets: ['latin'] , variable: "--font-poppins" , weig
 const gotham = localFont({
   src: [
     {
-      path: "../../public/fonts/GothamLight.otf",
-      weight: '300'
-   },
-    {
-       path: "../../public/fonts/GothamMedium.ttf",
-       weight: '500'
-    },
-    {
       path: "../../public/fonts/GothamBold.ttf",
-      weight: '700'
     }
   ],
   variable: '--font-gotham'
+})
+
+const avenirLight = localFont({
+  src: [
+    {
+      path: "../../public/fonts/AvenirLight.ttf",
+    }
+  ],
+  variable: '--font-avenirLight'
 })
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${gotham.variable} bg-black`}>{children}</body>
+      <body className={`${gotham.variable} ${avenirLight.variable}`}>{children}</body>
     </html>
   )
 }

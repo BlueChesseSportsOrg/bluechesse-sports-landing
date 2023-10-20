@@ -7,24 +7,27 @@ export default function AfconLayout({
     children: React.ReactNode
   }){
      return (
-       <div className="font-gotham">
+       <div className=" bg-black">
          <div className="flex flex-row justify-between items-center py-3 px-8">
            <div>
-             <Image
+            <Link className='cursor-pointer' href="/AFCON2023">
+            <Image
                src={`/bluecheese-logo-white.png`}
                width={100}
                height={150}
                alt="blue chesse logo"
                className="mx-auto md:mx-0"
              />
+            </Link>
+             
            </div>
            <div className="">
-               <a href="#" className="cursor-pointer font-medium text-white">FAQs</a>
+               <a href="#" className="cursor-pointer font-avenir font-medium text-white">FAQs</a>
            </div>
            
          </div>
          {children}
-         <div className="w-full px-8 p-12 mt-10 flex justify-between border-t  border-[#ffffff14] flex-row md:flex-nowrap flex-wrap ">
+         <div className="w-full px-8 p-12 mt-10 flex justify-between font-avenir flex-row md:flex-nowrap flex-wrap ">
            <div className='mt-3'>
                <h6 className='text-white font-medium'>© DIHGroup 2023</h6>
            </div>

@@ -31,7 +31,7 @@ const benefits = [
         description: "Savor the flavors of Cote D'Ivoire with delicious meals provided throughout the trip, including breakfasts, lunches, and dinners at local restaurants and cafes",
         order: "md:order-1 order-1",
         img: "/feeding.png",
-        width: "md:w-[95%]",
+        width: "md:w-[75%]",
         height: "h-[10rem]"
     },
     {
@@ -74,13 +74,13 @@ export default function ReserveSpot(){
         <div className="container mx-auto px-8 ">
         <div className="flex flex-row md:flex-nowrap flex-wrap gap-4 py-8">
           <div className="w-full lg:w-6/12 lg:order-none  order-1 flex items-center">
-            <div className="max-w-xl">
-              <h1 className="text-white font-bold md:text-3xl md:leading-normal text-3xl leading-normal mb-3">
+            <div className="max-w-2xl">
+              <h1 className="text-white font-gotham font-bold md:text-5xl md:leading-normal text-3xl leading-normal mb-3">
               Are you ready to experience the ultimate African football journey?
               </h1>
               <div className="flex flex-row gap-1 mb-3 w-full">
                 {/* <Image src={"/ci.svg"} alt="Ivorian Flag" width={18} height={10} /> */}
-                <h2 className="text-[#ffde59] font-normal md:text-lg md:leading-normal text-sm leading-normal">
+                <h2 className="text-[#ffde59] font-avenir font-normal md:text-lg md:leading-normal text-sm leading-normal">
                 Reserve your spot now for this once-in-a-lifetime trip to Abidjan, Côte D&apos;Ivoire and witness the magic of the African Cup of Nations!
                 </h2>
               </div>
@@ -122,10 +122,10 @@ export default function ReserveSpot(){
                 <div key={"benefits--" + index} className="flex  md:flex-nowrap flex-wrap flex-row my-16">
                   <div className={`md:w-6/12 w-full flex   ${item.order}`}>
                     <div className="max-w-xl">
-                      <h2 className="text-xl text-white font-bold mb-1">
+                      <h2 className="text-xl text-white font-gotham font-bold mb-1">
                         {item.title}
                       </h2>
-                      <p className="text-white font-light">
+                      <p className="text-white font-avenir font-light">
                         {item.description}
                       </p>
                     </div>
@@ -146,14 +146,14 @@ export default function ReserveSpot(){
         </div>
         <div className="w-full bg-[#f6f5f4] p-10">
           <div className="container mx-auto px-4">
-            <h1 className="text-black text-center font-medium md:text-3xl md:leading-normal text-3xl leading-normal my-8">
+            <h1 className="text-black font-gotham text-center font-medium md:text-3xl md:leading-normal text-3xl leading-normal my-8">
               Ready to reserve your spot?
             </h1>
             <div className="flex flex-row gap-16 flex-wrap justify-center">
               {/* card 1 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
                 <div className="px-5 pb-5 text-black">
-                  <div className="flex flex-row justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
+                  <div className="flex font-gotham flex-row justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
                     <div>
                       <h6 className="font-bold text-base">
                         Non-member services
@@ -163,7 +163,7 @@ export default function ReserveSpot(){
                       <h6 className="font-medium text-base">$199</h6>
                     </div>
                   </div>
-                  <div className="py-5 ">
+                  <div className="py-5 font-avenir">
                     <p className="text-sm font-light mb-2">
                       Choose the Blue Chesse Sports team and we will handle all
                       the necessary arrangements on your behalf.
@@ -191,7 +191,7 @@ export default function ReserveSpot(){
                   </div>
                   <div className="py-4 mt-16 text-center">
                     <Link
-                      className="text-white font-medium text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
+                      className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"/AFCON2023/reserve-your-spot"}
                     >
                       Select non-member services
@@ -207,7 +207,7 @@ export default function ReserveSpot(){
                     <Image src={`/badge.png`} className='absolute left-[50%] top-[50%]' height={50} width={140} alt="badge" style={{transform: "translate(-50%, -50%)"}} />
                 </div>
                 <div className="px-5 pb-5 text-black">
-                  <div className="flex flex-row items-stretch justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
+                  <div className="flex font-gotham flex-row items-stretch justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
                     <div>
                       <h6 className="font-bold text-base">Basic Plan</h6>
                     </div>
@@ -215,7 +215,7 @@ export default function ReserveSpot(){
                       <h6 className="font-medium text-base">$249/year</h6>
                     </div>
                   </div>
-                  <div className="py-5 ">
+                  <div className="py-5 font-avenir">
                     {/* <p className="text-sm font-light mb-2">
                       Choose the Blue Chesse Sports team and we will handle all
                       the necessary arrangements on your behalf.
@@ -247,9 +247,9 @@ export default function ReserveSpot(){
                       </li>
                     </ul>
                   </div>
-                  <div className="py-4 mt-[6rem] text-center">
+                  <div className="py-4 mt-[5rem] text-center">
                     <Link
-                      className="text-white font-medium text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
+                      className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"/AFCON2023/reserve-your-spot"}
                     >
                       Select Basic Plan
@@ -262,7 +262,7 @@ export default function ReserveSpot(){
               {/* card 3 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
                 <div className="px-5 pb-5 text-black">
-                  <div className="flex flex-row items-stretch justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
+                  <div className="flex font-gotham flex-row items-stretch justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
                     <div>
                       <h6 className="font-bold text-base">VIP Plan</h6>
                     </div>
@@ -270,7 +270,7 @@ export default function ReserveSpot(){
                       <h6 className="font-medium text-base">$499/year</h6>
                     </div>
                   </div>
-                  <div className="py-5 ">
+                  <div className="py-5 font-avenir">
                     {/* <p className="text-sm font-light mb-2">
                       Choose the Blue Chesse Sports team and we will handle all
                       the necessary arrangements on your behalf.
@@ -308,7 +308,7 @@ export default function ReserveSpot(){
                   </div>
                   <div className="py-4 mt-8 text-center">
                     <Link
-                      className="text-white font-medium text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
+                      className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"/AFCON2023/reserve-your-spot"}
                     >
                       Select VIP Plan
@@ -319,7 +319,7 @@ export default function ReserveSpot(){
               </div>
               {/* card 3 */}
             </div>
-            <div className="flex flex-col py-6">
+            <div className="flex flex-col py-6 font-avenir">
                 <div className="mb-3 mx-auto mt-8">
                    <Image
                      src={`/30.png`}
