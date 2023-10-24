@@ -149,7 +149,7 @@ export default function ReserveSpot(){
             <h1 className="text-black font-gotham text-center font-medium md:text-3xl md:leading-normal text-3xl leading-normal my-8">
               Ready to reserve your spot?
             </h1>
-            <div className="flex flex-row gap-16 flex-wrap justify-center">
+            <div className="flex flex-row gap-16 flex-wrap lg:flex-nowrap justify-center">
               {/* card 1 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
                 <div className="px-5 pb-5 text-black">

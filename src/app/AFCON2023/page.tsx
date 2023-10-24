@@ -74,7 +74,7 @@ export default function Afcon(){
             <div className="w-full lg:w-6/12 md:order-none  order-1">
               <div className="max-w-xl mx-auto">
                 <h1 className="text-white font-gotham font-bold md:text-5xl md:leading-normal text-4xl leading-normal mb-3">
-                  Let&apos;s play <span>&#x26BD;</span> in Abidjan!
+                  Let&apos;s play <span>&#x26BD;</span> in Abidjan <span className='inline-block align-middle'><Image src={"/ci.svg"} alt="Ivorian Flag" width={23} height={13} /></span>  !
                 </h1>
                 <div className="flex flex-row gap-1 mb-3 w-full">
                   {/* <Image src={"/ci.svg"} alt="Ivorian Flag" width={18} height={10} /> */}
