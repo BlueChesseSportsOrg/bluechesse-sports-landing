@@ -40,22 +40,22 @@ export default function AfconLayout({
                </h6>
              </div>
            </div>
-           <div className="flex flex-row items-center flex-wrap">
+           <div className="flex flex-row items-center md:mb-0 mb-2  flex-nowrap">
              <div className="p-1 mt-3 flex">
-               <a className="text-white font-normal text-sm cursor-pointer">
+               <a className="text-white font-normal md:text-sm text-xs cursor-pointer">
                  FAN MERCH
                </a>
                <div className="border-r ml-2"></div>
              </div>
              <div className="p-1 mt-3 flex">
-               <a className="text-white font-normal text-sm cursor-pointer">
+               <a className="text-white font-normal md:text-sm text-xs cursor-pointer">
                  OTHER SPORTS
                </a>
                <div className="border-r ml-2"></div>
              </div>
 
              <div className="p-1 mt-3 flex">
-               <a className="text-white font-normal text-sm cursor-pointer">
+               <a className="text-white font-normal md:text-sm text-xs cursor-pointer">
                  TERMS & CONDITIONS
                </a>
              </div>
