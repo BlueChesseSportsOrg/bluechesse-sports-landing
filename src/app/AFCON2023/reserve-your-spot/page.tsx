@@ -3,68 +3,68 @@ import Link from 'next/link'
 
 const benefits = [
     {
-        title: "Tickets",
+        title: "Front row seat game tickets",
         description: "Enjoy an exclusive viewing experience with top-tier seats for every tournament game, giving you a front-row view of the excitement.",
         order: "md:order-none order-1",
         img: "/tickets.png",
         height: "h-[12rem]",  
-        width: "md:w-[80%]"
+        width: "md:w-[100%]"
     },
     {
-        title: "Accommodation",
+        title: "Comfortable and secure accommodation",
         description: "Stay in comfortable hotels and apartments in the heart of Abidjan, close to both the stadium and the city's main attractions.",
-        order: "md:order-1 order-1",
+        order: "md:order-1 order-1 md:text-end",
         img: "/accommodation.png",
-        width: "md:w-[95%]",
-        height: "h-[20rem]"
+        width: "md:w-[100%]",
+        height: "h-[12rem]"
     },
     {
-        title: "Transportation",
+        title: "Private transportation between game venues",
         description: "Travel in style with private transportation to and from the stadium, as well as airport transfers from the airport.",
         order: "md:order-none order-1",
         img: "/transportation.png",
-        width: "md:w-[95%]",
-        height: "h-[20rem]"
+        width: "md:w-[100%]",
+        height: "h-[12rem]"
     },
     {
-        title: "Feeding",
-        description: "Savor the flavors of Cote D'Ivoire with delicious meals provided throughout the trip, including breakfasts, lunches, and dinners at local restaurants and cafes",
-        order: "md:order-1 order-1",
-        img: "/feeding.png",
-        width: "md:w-[75%]",
+        title: "Local and continental cuisine curated to your taste",
+        description: " Savor the flavors of Cote D'Ivoire with delicious meals provided throughout the trip, including breakfasts, lunches, and dinners at local restaurants and cafes.",
+        order: "md:order-1 order-1 md:text-end",
+        img: "/local-cuisine.png",
+        width: "md:w-[100%]",
         height: "h-[10rem]"
     },
     {
-        title: "After Game Parties",
+        title: "Enjoy After Game Parties, Ivorian Style",
         description: "Celebrate every match in style with exclusive access to after-game parties featuring local music and dance styles, like the electrifying Coupe Decale.",
         order: "md:order-none order-1",
-        img: "/transportation.png",
-        width: "md:w-[95%]",
-        height: "h-[22rem]"
+        img: "/after-parties.png",
+        width: "md:w-[100%]",
+        height: "h-[12rem]"
     },
     {
-        title: "City tours",
-        description: "Discover the beauty and culture of Cote D'Ivoire with guided city tours to popular hotspots and hidden gems.",
-        order: "md:order-1 order-1",
-        img: "/city-tours.png",
-        width: "md:w-[80%]",
-        height: "h-[22rem]"
+        title: "Explore sights and sounds of Cote D’Ivoire via our curated city tours",
+        description: "Discover the beauty and culture of Cote D’Ivoire with guided city tours to popular hotspots and hidden gems.",
+        order: "md:order-1 order-1 md:text-end",
+        img: "/sights-sounds.png",
+        width: "md:w-[100%]",
+        height: "h-[12rem]"
     },
     {
-        title: "Work Remotely",
+        title: "Keep up with work remotely while you enjoy the tournament",
         description: "Stay connected with reliable internet access throughout the trip, perfect for remote work or staying in touch with loved ones back home.",
         order: "md:order-none order-1",
-        img: "/internet-access.png",
+        img: "/work.png",
         height: "h-[12rem]",
-        width: "md:w-[80%]"
+        width: "md:w-[100%]"
     },
     {
-        title: "Fan Merch",
+        title: "Be on brand with our curated fan merchandise",
         description: "Show off your team spirit with official fan merchandise included in the package.",
-        order: "md:order-1 order-1",
-        img: "/fan-merch.png",
+        order: "md:order-1 order-1 md:text-end",
+        img: "/merch.png",
         height:"h-[12rem]",
-        width: "md:w-[80%]"
+        width: "md:w-[100%]"
     },
 ]
 
@@ -75,7 +75,7 @@ export default function ReserveSpot(){
         <div className="flex flex-row md:flex-nowrap flex-wrap gap-4 py-8">
           <div className="w-full lg:w-6/12 lg:order-none  order-1 flex items-center">
             <div className="max-w-2xl">
-              <h1 className="text-white font-gotham font-bold md:text-5xl md:leading-normal text-3xl leading-normal mb-3">
+              <h1 className="text-white font-gotham font-bold md:text-5xl md:leading-normal text-2xl leading-normal mb-3">
               Are you ready to experience the ultimate African football journey?
               </h1>
               <div className="flex flex-row gap-1 mb-3 w-full">
@@ -116,28 +116,30 @@ export default function ReserveSpot(){
               </div>
             </div>
           </div> */}
-          <div className="flex flex-col gap-12 mt-8  py-8">
+          <div className="flex flex-col gap-y-[8rem]  mt-8  py-8">
             {benefits.map((item, index) => {
               return (
-                <div key={"benefits--" + index} className="flex  md:flex-nowrap flex-wrap flex-row my-16">
-                  <div className={`md:w-6/12 w-full flex   ${item.order}`}>
-                    <div className="max-w-xl">
-                      <h2 className="text-xl text-white font-gotham font-bold mb-1">
-                        {item.title}
-                      </h2>
+                <div
+                  key={"benefits--" + index}
+                  className="flex  md:flex-nowrap flex-wrap gap-4 flex-row py-8"
+                >
+                  <div className={`md:w-6/12 w-full flex flex-col  ${item.order}`}>
+                    <div className="leading-loose">
+                      <div className="break-words">
+                        <h2 className="md:text-2xl text-xl text-white font-gotham font-bold mb-3">
+                          {item.title}
+                        </h2>
+                     
+                    </div>
                       <p className="text-white font-avenir font-light">
                         {item.description}
                       </p>
-                    </div>
+                      </div>
                   </div>
                   <div className="md:w-6/12 w-full md:mb-0 mb-4">
-                      <div className={`relative ${item.height} ${item.width}`} >
-                          <Image 
-                            src={item.img}
-                            alt="Benefits"
-                            fill={true}
-                          />
-                      </div>
+                    <div className={`relative ${item.height} ${item.width}`}>
+                      <Image src={item.img} alt="Benefits" fill={true} />
+                    </div>
                   </div>
                 </div>
               );
@@ -225,7 +227,7 @@ export default function ReserveSpot(){
                     </p> */}
                     <ul className="list-disc ml-4 mb-4 text-black">
                       <li className="text-sm font-light mb-2">
-                        Become a Blue Cheese member
+                        Become a Blue Chesse member
                       </li>
                       <li className="text-sm font-light mb-2">
                         Get 300 Blue Chesse Sports points to boost leaderboard
@@ -280,7 +282,7 @@ export default function ReserveSpot(){
                     </p> */}
                     <ul className="list-disc ml-4 mb-4 text-black">
                       <li className="text-sm font-light mb-2">
-                        Become a Blue Cheese member
+                        Become a Blue Chesse member
                       </li>
                       <li className="text-sm font-light mb-2">
                         Get 900 Blue Chesse Sports points to boost leaderboard
@@ -328,7 +330,7 @@ export default function ReserveSpot(){
                      alt="30 days"
                    />
                 </div>
-                <h6 className='text-base font-medium text-center mb-3 text-black'>Try BlueCheese for 30 days and if it isn&apos;t for you get refunded - See 
+                <h6 className='text-base font-medium text-center mb-3 text-black'>Try BlueChesse for 30 days and if it isn&apos;t for you get refunded - See 
                    <Link className="cursor-pointer text-blue-500  text-base " href={"#"}> Terms & Conditions </Link>
                  </h6>
                  <h6 className='text-base font-medium text-center text-black'>Limited spots available - don&apos;t miss out on this amazing opportunity!
