@@ -72,9 +72,9 @@ export default function Afcon(){
        <div className="container mx-auto px-8 ">
           <div className="flex flex-row md:flex-nowrap flex-wrap gap-4 py-10">
             <div className="w-full lg:w-6/12 md:order-none  order-1">
-              <div className="max-w-xl mx-auto">
+              <div className="max-w-xl">
                 <h1 className="text-white font-gotham font-bold md:text-5xl md:leading-normal text-4xl leading-normal mb-3">
-                  Let&apos;s play <span>&#x26BD;</span> in Abidjan <span className='inline-block align-middle'><Image src={"/ci.svg"} alt="Ivorian Flag" width={23} height={13} /></span>  !
+                  Let&apos;s play <span>&#x26BD;</span> in Abidjan <span className='inline-block align-middle'><Image src={"/ci.svg"} alt="Ivorian Flag" width={23} height={13} /></span>
                 </h1>
                 <div className="flex flex-row gap-1 mb-3 w-full">
                   {/* <Image src={"/ci.svg"} alt="Ivorian Flag" width={18} height={10} /> */}
@@ -115,7 +115,7 @@ export default function Afcon(){
               </div>
             </div>
             <div className="w-full md:w-6/12  relative lg:flex justify-center items-center">
-              <div className="relative md:w-[90%]  w-full md:h-[30rem] h-[16rem]">
+              <div className="relative   w-full md:h-[30rem] h-[16rem]">
                 <Image
                   src={`/hero-image.png`}
                   fill={true}
