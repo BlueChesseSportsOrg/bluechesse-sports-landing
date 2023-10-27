@@ -814,6 +814,7 @@ export default function Terms(){
                   11. Miscellaneous
                 </span>
               </p>
+              <p><br/></p>
               <p
                 dir="ltr"
                 style={{

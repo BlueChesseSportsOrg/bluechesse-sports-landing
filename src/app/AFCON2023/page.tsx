@@ -121,6 +121,7 @@ export default function Afcon(){
                   fill={true}
                   // width={850}
                   // height={500}
+                  sizes="100vw"
                   alt="football fans"
                 />
               </div>
