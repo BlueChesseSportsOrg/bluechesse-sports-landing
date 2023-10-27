@@ -73,8 +73,8 @@ export default function Afcon(){
           <div className="flex flex-row lg:flex-nowrap flex-wrap gap-4 py-10">
             <div className="w-full lg:w-6/12 lg:order-none  order-1">
               <div className="max-w-xl">
-                <h1 className="text-white font-gotham font-bold md:text-5xl md:leading-normal text-4xl leading-normal mb-3">
-                  Let&apos;s play <span>&#x26BD;</span> in Cote D’Ivoire <span className='inline-block align-middle'><Image src={"/ci.svg"} alt="Ivorian Flag" width={33} height={23} /></span>
+                <h1 className="text-white font-gotham font-bold md:text-5xl lg:text-6xl md:leading-normal text-4xl leading-normal mb-3">
+                  Let&apos;s play <span>&#x26BD;</span> in Co&#x302;te D’Ivoire <span className='inline-block align-middle w-[33px] md:w-[40px] lg:w-[48px] h-[22px]'><Image src={"/ci.svg"} alt="Ivorian Flag" width={100} height={100} /></span>
                 </h1>
                 <div className="flex flex-row gap-1 mb-3 w-full">
                   {/* <Image src={"/ci.svg"} alt="Ivorian Flag" width={18} height={10} /> */}
