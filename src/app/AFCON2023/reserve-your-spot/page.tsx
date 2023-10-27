@@ -6,6 +6,7 @@ const benefits = [
         title: "Front row seat game tickets",
         description: "Enjoy an exclusive viewing experience with top-tier seats for every tournament game, giving you a front-row view of the excitement.",
         order: "md:order-none order-1",
+        textMargin: "md:mr-auto",
         img: "/tickets.png",
         height: "h-[12rem]",  
         width: "md:w-[100%]"
@@ -14,6 +15,7 @@ const benefits = [
         title: "Comfortable and secure accommodation",
         description: "Stay in comfortable hotels and apartments in the heart of Abidjan, close to both the stadium and the city's main attractions.",
         order: "md:order-1 order-1 md:text-end",
+        textMargin: "md:ml-auto",
         img: "/accommodation.png",
         width: "md:w-[100%]",
         height: "h-[12rem]"
@@ -22,6 +24,7 @@ const benefits = [
         title: "Private transportation between game venues",
         description: "Travel in style with private transportation to and from the stadium, as well as airport transfers from the airport.",
         order: "md:order-none order-1",
+        textMargin: "md:mr-auto",
         img: "/transportation.png",
         width: "md:w-[100%]",
         height: "h-[12rem]"
@@ -30,38 +33,43 @@ const benefits = [
         title: "Local and continental cuisine curated to your taste",
         description: " Savor the flavors of Cote D'Ivoire with delicious meals provided throughout the trip, including breakfasts, lunches, and dinners at local restaurants and cafes.",
         order: "md:order-1 order-1 md:text-end",
+        textMargin: "md:ml-auto",
         img: "/local-cuisine.png",
         width: "md:w-[100%]",
         height: "h-[10rem]"
-    },
-    {
+      },
+      {
         title: "Enjoy After Game Parties, Ivorian Style",
         description: "Celebrate every match in style with exclusive access to after-game parties featuring local music and dance styles, like the electrifying Coupe Decale.",
         order: "md:order-none order-1",
+        textMargin: "md:mr-auto",
         img: "/after-parties.png",
         width: "md:w-[100%]",
         height: "h-[12rem]"
-    },
+      },
     {
-        title: "Explore sights and sounds of Cote D’Ivoire via our curated city tours",
+      title: "Explore sights and sounds of Cote D’Ivoire via our curated city tours",
         description: "Discover the beauty and culture of Cote D’Ivoire with guided city tours to popular hotspots and hidden gems.",
         order: "md:order-1 order-1 md:text-end",
+      textMargin: "md:ml-auto",
         img: "/sights-sounds.png",
         width: "md:w-[100%]",
         height: "h-[12rem]"
-    },
+      },
     {
-        title: "Keep up with work remotely while you enjoy the tournament",
-        description: "Stay connected with reliable internet access throughout the trip, perfect for remote work or staying in touch with loved ones back home.",
-        order: "md:order-none order-1",
+      title: "Keep up with work remotely while you enjoy the tournament",
+      description: "Stay connected with reliable internet access throughout the trip, perfect for remote work or staying in touch with loved ones back home.",
+      order: "md:order-none order-1",
+      textMargin: "md:mr-auto",
         img: "/work.png",
         height: "h-[12rem]",
         width: "md:w-[100%]"
     },
     {
-        title: "Be on brand with our curated fan merchandise",
-        description: "Show off your team spirit with official fan merchandise included in the package.",
+      title: "Be on brand with our curated fan merchandise",
+      description: "Show off your team spirit with official fan merchandise included in the package.",
         order: "md:order-1 order-1 md:text-end",
+      textMargin: "md:ml-auto",
         img: "/merch.png",
         height:"h-[12rem]",
         width: "md:w-[100%]"
@@ -71,16 +79,16 @@ const benefits = [
 export default function ReserveSpot(){
     return (
       <div>
-        <div className="container mx-auto px-8 ">
-        <div className="flex flex-row md:flex-nowrap flex-wrap gap-4 py-8">
-          <div className="w-full lg:w-6/12 lg:order-none  order-1 flex items-center">
-            <div className="max-w-2xl">
-              <h1 className="text-white font-gotham font-bold md:text-5xl md:leading-normal text-2xl leading-normal mb-3">
+        <div className="container xl:max-w-7xl mx-auto px-8 ">
+        <div className="flex flex-row md:flex-nowrap flex-wrap justify-between gap-[50px] py-8">
+          <div className="w-full lg:w-6/12 lg:flex-auto lg:order-none  order-1 flex items-center">
+            <div className="max-w-2xl ">
+              <h1 className="text-white font-gotham font-bold md:text-[2.65rem] md:leading-snug text-2xl leading-snug mb-3">
               Are you ready to experience the ultimate African football journey?
               </h1>
               <div className="flex flex-row gap-1 mb-3 w-full">
                 {/* <Image src={"/ci.svg"} alt="Ivorian Flag" width={18} height={10} /> */}
-                <h2 className="text-[#ffde59] font-avenir font-normal md:text-lg md:leading-normal text-sm leading-normal">
+                <h2 className="text-[#ffde59] font-avenir font-normal md:text-lg md:leading-sn text-sm leading-normal">
                 Reserve your spot now for this once-in-a-lifetime trip to Abidjan, Côte D&apos;Ivoire and witness the magic of the African Cup of Nations!
                 </h2>
               </div>
@@ -88,13 +96,14 @@ export default function ReserveSpot(){
               
             </div>
           </div>
-          <div className="w-full lg:w-6/12 relative lg:flex justify-center items-center">
-            <div className="relative lg:w-[90%]  w-full  lg:h-[30rem] h-[22rem]">
+          <div className="w-full lg:w-7/12 relative lg:flex lg:flex-auto justify-center items-center">
+            <div className="relative lg:w-[100%]  w-full  lg:h-[40rem] md:h-[30rem] h-[22rem]">
               <Image
                 src={`/akwaba.png`}
                 fill={true}
                 // width={850}
                 // height={500}
+                style={{objectFit: "contain"}}
                 alt="football fans"
                 className='rounded-[12px]'
               />
@@ -123,10 +132,10 @@ export default function ReserveSpot(){
                   key={"benefits--" + index}
                   className="flex  md:flex-nowrap flex-wrap gap-4 flex-row py-8"
                 >
-                  <div className={`md:w-6/12 w-full flex flex-col  ${item.order}`}>
-                    <div className="leading-loose">
+                  <div className={`md:w-6/12 w-full flex flex-col ${item.order}`}>
+                    <div className={`leading-loose max-w-[500px] ${item.textMargin}`}>
                       <div className="break-words">
-                        <h2 className="md:text-2xl text-xl text-white font-gotham font-bold mb-3">
+                        <h2 className="lg:text-4xl md:text-2xl text-xl text-white font-gotham font-bold mb-3">
                           {item.title}
                         </h2>
                      
@@ -137,8 +146,8 @@ export default function ReserveSpot(){
                       </div>
                   </div>
                   <div className="md:w-6/12 w-full md:mb-0 mb-4">
-                    <div className={`relative ${item.height} ${item.width}`}>
-                      <Image src={item.img} alt="Benefits" fill={true} />
+                    <div className={`relative ${item.height} ${item.width} md:h-[15rem]`}>
+                      <Image src={item.img} alt="Benefits" fill={true} style={{objectFit: "contain"}} />
                     </div>
                   </div>
                 </div>
@@ -147,7 +156,7 @@ export default function ReserveSpot(){
           </div>
         </div>
         <div className="w-full bg-[#f6f5f4] p-10">
-          <div className="container mx-auto px-4">
+          <div className="container xl:max-w-7xl mx-auto px-4">
             <h1 className="text-black font-gotham text-center font-medium md:text-3xl md:leading-normal text-3xl leading-normal my-8">
               Ready to reserve your spot?
             </h1>
@@ -311,7 +320,7 @@ export default function ReserveSpot(){
                   <div className="py-4 mt-8 text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
-                      href={"/AFCON2023/reserve-your-spot"}
+                      href={"https://bit.ly/3S7RhO5"}
                     >
                       Select VIP Plan
                       
@@ -331,11 +340,15 @@ export default function ReserveSpot(){
                    />
                 </div>
                 <h6 className='text-base font-medium text-center mb-3 text-black'>Try BlueChesse for 30 days and if it isn&apos;t for you get refunded - See 
-                   <Link className="cursor-pointer text-blue-500  text-base " href={"#"}> Terms & Conditions </Link>
+                   <Link className="cursor-pointer text-blue-500  text-base " href="/AFCON2023/terms"> Terms & Conditions </Link>
                  </h6>
                  <h6 className='text-base font-medium text-center text-black'>Limited spots available - don&apos;t miss out on this amazing opportunity!
                  </h6>
-                 <h6 className='text-base font-medium text-center text-black'>Contact us today to learn more!
+                 <h6 className='text-base font-medium text-center text-black'>
+                  <a href="mailto:info@bluchessesports.com" target="blank">
+                    Contact us &nbsp; 
+                  </a>
+                  today to learn more!
                  </h6>
             </div>
           </div>

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function Privacy(){
     return (
-      <div className="container mx-auto px-8">
+      <div className="container xl:max-w-7xl mx-auto px-8">
         <div className="flex flex-col  py-4">
           <h1 className="text-white font-gotham font-bold mb-5 text-2xl">
             Privacy Policy
