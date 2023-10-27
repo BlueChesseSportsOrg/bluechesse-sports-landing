@@ -2,7 +2,7 @@
 export default function Terms(){
     return (
       <div>
-        <div className="container mx-auto px-8">
+        <div className="container xl:max-w-7xl mx-auto px-8">
           <div className="flex flex-col  py-4">
             <h1 className="text-white font-gotham font-bold mb-5 text-2xl">
               Terms and Conditions of Service of Blue Chesse Sports
@@ -814,6 +814,7 @@ export default function Terms(){
                   11. Miscellaneous
                 </span>
               </p>
+              <p><br/></p>
               <p
                 dir="ltr"
                 style={{
