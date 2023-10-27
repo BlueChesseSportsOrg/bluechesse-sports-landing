@@ -8,7 +8,7 @@ export default function AfconLayout({
   }){
      return (
        <div className=" bg-black min-h-screen">
-         <div className="container mx-auto px-8">
+         <div className="container xl:max-w-7xl mx-auto px-8">
            <div className="flex flex-row justify-between items-center py-6 ">
              <div>
                <Link className="cursor-pointer" href="/AFCON2023">
@@ -33,8 +33,8 @@ export default function AfconLayout({
          </div>
 
          {children}
-         <div className="container mx-auto px-8">
-           <div className="w-full  py-4 mt-10 flex justify-between font-avenir flex-row md:flex-nowrap flex-wrap border-t  border-[#ffffff14]">
+         <div className="container xl:max-w-7xl mx-auto px-8">
+           <div className="w-full  py-4 mt-10 flex justify-between font-avenir flex-row md:flex-nowrap flex-wrap border-t  border-[#ffffff]">
              <div className="mt-3">
                <h6 className="text-white font-medium mb-2">© DIHGroup 2023</h6>
                <div className="max-w-xs">
@@ -81,7 +81,7 @@ export default function AfconLayout({
                </div>
                {/* Twitter */}
                <div className="w-4 h-4">
-                 <a href="#">
+                 <a href="https://twitter.com/BlueChesseSport">
                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                      <path
                        fill="white"
@@ -92,7 +92,7 @@ export default function AfconLayout({
                </div>
                {/* Instagram */}
                <div className="w-4 h-4">
-                 <a href="#">
+                 <a href="https://www.instagram.com/bluechessesports/">
                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                      <g fill="white" fillRule="evenodd">
                        <path

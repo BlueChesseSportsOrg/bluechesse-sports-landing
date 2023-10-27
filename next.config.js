@@ -3,6 +3,7 @@ let assetPrefix = ''
 let basePath = ''
 let images = {
   loader: 'default',
+  unoptimized: true
 }
 
 let isGithubActions = process.env.BLUECHEESE_ACTIONS || false

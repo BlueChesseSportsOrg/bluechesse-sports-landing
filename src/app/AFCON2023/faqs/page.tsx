@@ -99,7 +99,7 @@ export default function FAQ(){
         },
     ]
     return (
-      <div className="container mx-auto px-8">
+      <div className="container xl:max-w-7xl mx-auto px-8">
         <div className="flex flex-col py-4">
           <div className="py-4">
             <h2 className="font-bold text-white text-lg font-gotham">

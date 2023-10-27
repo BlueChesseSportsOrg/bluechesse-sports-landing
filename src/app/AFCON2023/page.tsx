@@ -69,12 +69,12 @@ export default function Afcon(){
     return (
     <div className="">
       <div className='w-full bg-black'>
-       <div className="container mx-auto px-8 ">
-          <div className="flex flex-row md:flex-nowrap flex-wrap gap-4 py-10">
-            <div className="w-full lg:w-6/12 md:order-none  order-1">
+       <div className="container xl:max-w-7xl mx-auto px-8 ">
+          <div className="flex flex-row lg:flex-nowrap flex-wrap gap-4 py-10">
+            <div className="w-full lg:w-6/12 lg:order-none  order-1">
               <div className="max-w-xl">
                 <h1 className="text-white font-gotham font-bold md:text-5xl md:leading-normal text-4xl leading-normal mb-3">
-                  Let&apos;s play <span>&#x26BD;</span> in Abidjan <span className='inline-block align-middle'><Image src={"/ci.svg"} alt="Ivorian Flag" width={23} height={13} /></span>
+                  Let&apos;s play <span>&#x26BD;</span> in Cote D’Ivoire <span className='inline-block align-middle'><Image src={"/ci.svg"} alt="Ivorian Flag" width={33} height={23} /></span>
                 </h1>
                 <div className="flex flex-row gap-1 mb-3 w-full">
                   {/* <Image src={"/ci.svg"} alt="Ivorian Flag" width={18} height={10} /> */}
@@ -106,16 +106,16 @@ export default function Afcon(){
                 </div>
                 <div className="mt-8 mb-4">
                   <Link
-                    className="text-[#131517] font-avenir font-semibold text-base  bg-white  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
+                    className="text-[#131517] font-avenir font-bold text-base bg-white  focus:ring-4 focus:outline-none focus:ring-[#050708]/50 rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                     href={"/AFCON2023/reserve-your-spot"}
                   >
-                    Reserve Your Spot
+                    Reserve your spot
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-6/12  relative lg:flex justify-center items-center">
-              <div className="relative   w-full md:h-[30rem] h-[16rem]">
+            <div className="w-full lg:w-6/12  relative lg:flex justify-center items-center">
+              <div className="relative w-full md:h-[30rem] h-[16rem]">
                 <Image
                   src={`/hero-image.png`}
                   fill={true}
