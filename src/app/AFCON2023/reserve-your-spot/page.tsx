@@ -179,10 +179,10 @@ export default function ReserveSpot(){
                       Choose the Blue Chesse Sports team and we will handle all
                       the necessary arrangements on your behalf.
                     </p>
-                    <p className="text-sm font-light mb-3">
+                    <p className="text-sm font-light mb-1">
                       Our non-member services package includes:
                     </p>
-                    <ul className="list-disc ml-10 mb-4">
+                    <ul className="list-disc ml-10 mb-2">
                       <li className="text-sm font-light mb-1">
                         Accommodation Booking
                       </li>
@@ -190,20 +190,25 @@ export default function ReserveSpot(){
                         Ticket Purchasing
                       </li>
                     </ul>
-                    <p className="text-sm font-light mb-1">
+                    <p className="text-sm font-light mb-2">
                       Please note that as a non-member, priority service and
                       discount offers from our partners are not available with
                       this package.
                     </p>
-                    <p className="text-sm font-light mb-1">
+                    <p className="text-sm font-light mb-2">
                       However, you can still rely on our expertise and extensive
                       network to ensure a seamless and memorable experience.
                     </p>
+                    <p className="text-sm font-light mb-1">
+                      This option is best suited for sports enthusiasts 
+                      who want to attend a singular sports event and not 
+                      necessarily become a member of the Blue Chesse Sports community. 
+                    </p>
                   </div>
-                  <div className="py-4 mt-16 text-center">
+                  <div className="py-4 mt-4 text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
-                      href={"/AFCON2023/reserve-your-spot"}
+                      href={"https://bit.ly/45TmDev"}
                     >
                       Select non-member services
                       
@@ -236,7 +241,14 @@ export default function ReserveSpot(){
                     </p> */}
                     <ul className="list-disc ml-4 mb-4 text-black">
                       <li className="text-sm font-light mb-2">
-                        Become a Blue Chesse member
+                        Concierge service to book group accommodation, remote
+                        work space, game tickets and group transportation
+                      </li>
+                      <li className="text-sm font-light mb-2">
+                        Blue Chesse fan merchandise
+                      </li>
+                      <li className="text-sm font-light mb-2">
+                        After game parties and city tours
                       </li>
                       <li className="text-sm font-light mb-2">
                         Get 300 Blue Chesse Sports points to boost leaderboard
@@ -244,24 +256,17 @@ export default function ReserveSpot(){
                         partners all year round
                       </li>
                       <li className="text-sm font-light mb-2">
-                        Blue Chesse fan merchandise
-                      </li>
-                      <li className="text-sm font-light mb-2">
-                        Concierge service to book group accommodation ,remote
-                        work space , game tickets and group transportation
-                      </li>
-                      <li className="text-sm font-light mb-2">
-                        After game parties and city tours
+                        Become a Blue Chesse member
                       </li>
                       <li className="text-sm font-light mb-2">
                         Support via whatsapp/email
                       </li>
                     </ul>
                   </div>
-                  <div className="py-4 mt-[5rem] text-center">
+                  <div className="py-4 mt-[7.251rem] text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
-                      href={"/AFCON2023/reserve-your-spot"}
+                      href={"https://bit.ly/3S7RhO5"}
                     >
                       Select Basic Plan
                       
@@ -291,19 +296,7 @@ export default function ReserveSpot(){
                     </p> */}
                     <ul className="list-disc ml-4 mb-4 text-black">
                       <li className="text-sm font-light mb-2">
-                        Become a Blue Chesse member
-                      </li>
-                      <li className="text-sm font-light mb-2">
-                        Get 900 Blue Chesse Sports points to boost leaderboard
-                        standing, access discount and priority offers from our
-                        partners all year round
-                      </li>
-                      <li className="text-sm font-light mb-2">
-                        Blue Chesse fan merchandise
-                      </li>
-                      <li className="text-sm font-light mb-2">
-                        Concierge service to book private accommodation ,remote
-                        work space , game tickets and private transfers
+                        Concierge service to book private accommodation ,remote work space , game tickets and private transfers
                       </li>
                       <li className="text-sm font-light mb-2">
                         After game parties and city tours
@@ -312,12 +305,20 @@ export default function ReserveSpot(){
                         Priority support all throughout your stay via phone
                       </li>
                       <li className="text-sm font-light mb-2">
-                        Hands on curation of sporting & fitness events all year
-                        round
+                        Hands on curation of sporting events such as Olympic, F1 and UFC matches all year round
+                      </li>
+                      <li className="text-sm font-light mb-2">
+                        Get 900 Blue Chesse Sports points to boost leaderboard standing, access discount and priority offers from our partners all year round
+                      </li>
+                      <li className="text-sm font-light mb-2">
+                        Become a Blue Chesse member 
+                      </li>
+                      <li className="text-sm font-light mb-2">
+                        Blue Chesse fan merchandise 
                       </li>
                     </ul>
                   </div>
-                  <div className="py-4 mt-8 text-center">
+                  <div className="py-4 mt-16 text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"https://bit.ly/3S7RhO5"}
