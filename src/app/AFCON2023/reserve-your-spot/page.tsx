@@ -205,7 +205,7 @@ export default function ReserveSpot(){
                       necessarily become a member of the Blue Chesse Sports community. 
                     </p>
                   </div>
-                  <div className="py-4 mt-16 text-center">
+                  <div className="py-4 mt-4 text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"https://bit.ly/45TmDev"}
@@ -263,7 +263,7 @@ export default function ReserveSpot(){
                       </li>
                     </ul>
                   </div>
-                  <div className="py-4 mt-[5rem] text-center">
+                  <div className="py-4 mt-[7.251rem] text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"https://bit.ly/3S7RhO5"}
@@ -318,7 +318,7 @@ export default function ReserveSpot(){
                       </li>
                     </ul>
                   </div>
-                  <div className="py-4 mt-8 text-center">
+                  <div className="py-4 mt-16 text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
                       href={"https://bit.ly/3S7RhO5"}
