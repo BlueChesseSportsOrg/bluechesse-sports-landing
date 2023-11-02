@@ -25,7 +25,7 @@ const avenirLight = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'BlueCheese Sports',
+  title: 'Blue Chesse Sports Travel',
   description: 'Travel with a group of 50 fans to Cote D\'Ivoire',
 }
 
