@@ -77,7 +77,7 @@ export default function FAQ(){
             description: `
              <p class="mb-3"> You can reach us through the following channels:</p>
              <ul class="ml-8"> 
-                 <li class="list-disc mb-1"> <span class="font-bold">Email: </span>  info@bluschessesports.com</li>
+                 <li class="list-disc mb-1"> <span class="font-bold">Email: </span>  info@bluechessesports.com</li>
                  <li class="list-disc mb-1"> <span class="font-bold">Phone: </span>  +17628001669</li>
                  <div class="flex flex-row gap-3"> 
                     <li class="list-disc mb-1"> <span class="font-bold">Address: </span> </li>
