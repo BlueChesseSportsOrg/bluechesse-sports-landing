@@ -37,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${gotham.variable} ${avenirLight.variable}`}>{children}</body>
+      <script type="text/javascript" src="https://af.uppromote.com/tracking_third_party.js?shop=529dd4-3.myshopify.com"></script>
     </html>
   )
 }
