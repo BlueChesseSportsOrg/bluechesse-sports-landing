@@ -1,0 +1,21 @@
+
+.landing-section::after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 112, 99, 0.18);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 39%, 50% 54%, 0 39%);
+  clip-path: polygon(0 0, 100% 0, 100% 39%, 50% 54%, 0 39%);
+}
+
+.landing-bg {
+  z-index: 2;
+}
+
+.started-section {
+  background: url('../../public/section-bg.png') no-repeat center/cover;
+}
