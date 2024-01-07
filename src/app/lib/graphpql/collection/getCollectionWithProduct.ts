@@ -1,7 +1,5 @@
 import { gql } from "graphql-request";
 import customClient from "../customClient";
-import { log } from "console";
-// import CollectionPage from "pages/collections/[handle]";
 
 // ProductCollectionSortKeys(https://shopify.dev/api/storefront/reference/products/productcollectionsortkeys)
 export type SortBy =
