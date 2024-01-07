@@ -11,15 +11,20 @@
   "dependencies": {
     "@stripe/react-stripe-js": "^2.4.0",
     "@stripe/stripe-js": "^2.2.0",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
     "next": "^13.4.16",
+    "ra-data-graphql": "^4.16.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "shopify-buy": "^2.21.1",
     "stripe": "^14.5.0"
   },
   "devDependencies": {
     "@types/node": "^20.8.0",
     "@types/react": "^18.2.24",
+    "@types/shopify-buy": "^2.17.4",
     "autoprefixer": "^10.4.15",
     "daisyui": "^3.9.3",
     "postcss": "^8.4.28",

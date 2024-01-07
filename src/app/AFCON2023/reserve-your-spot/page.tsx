@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from 'next/link';
 
 const benefits = [
     {
@@ -87,13 +87,10 @@ export default function ReserveSpot(){
               Are you ready to experience the ultimate African football journey?
               </h1>
               <div className="flex flex-row gap-1 mb-3 w-full">
-                {/* <Image src={"/ci.svg"} alt="Ivorian Flag" width={18} height={10} /> */}
                 <h2 className="text-[#ffde59] font-avenir font-normal md:text-lg md:leading-sn text-sm leading-normal">
                 Reserve your spot now for this once-in-a-lifetime trip to Abidjan, Côte D&apos;Ivoire and witness the magic of the African Cup of Nations!
                 </h2>
               </div>
-             
-              
             </div>
           </div>
           <div className="w-full lg:w-7/12 relative lg:flex lg:flex-auto justify-center items-center">
@@ -101,8 +98,6 @@ export default function ReserveSpot(){
               <Image
                 src={`/akwaba.png`}
                 fill={true}
-                // width={850}
-                // height={500}
                 style={{objectFit: "contain"}}
                 alt="football fans"
                 className='rounded-[12px]'
@@ -110,21 +105,6 @@ export default function ReserveSpot(){
             </div>
           </div>
         </div>
-          {/* <div className="flex flex-col py-10">
-            <div className="w-8/12 mx-auto text-center">
-              <div>
-                <h1 className="text-white font-bold md:text-4xl md:leading-normal text-4xl leading-normal mb-3">
-                  Are you ready to experience the ultimate African football
-                  journey?
-                </h1>
-                <h2 className="text-[#ffde59] font-normal md:text-lg md:leading-normal text-base leading-normal">
-                  Reserve your spot now for this once-in-a-lifetime trip to
-                  Abidjan, Côte D&apos;Ivoire and witness the magic of the
-                  African Cup of Nations!
-                </h2>
-              </div>
-            </div>
-          </div> */}
           <div className="flex flex-col gap-y-[8rem]  mt-8  py-8">
             {benefits.map((item, index) => {
               return (
@@ -138,7 +118,6 @@ export default function ReserveSpot(){
                         <h2 className="lg:text-4xl md:text-2xl text-xl text-white font-gotham font-bold mb-3">
                           {item.title}
                         </h2>
-                     
                     </div>
                       <p className="text-white font-avenir font-light">
                         {item.description}
@@ -161,7 +140,6 @@ export default function ReserveSpot(){
               Ready to reserve your spot?
             </h1>
             <div className="flex flex-row gap-16 flex-wrap lg:flex-nowrap justify-center">
-              {/* card 1 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
                 <div className="px-5 pb-5 text-black">
                   <div className="flex font-gotham flex-row justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
@@ -208,16 +186,14 @@ export default function ReserveSpot(){
                   <div className="py-4 mt-4 text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
-                      href={"https://bit.ly/45TmDev"}
-                    >
+                      href={"/stripe/checkout"}
+                      >
+                      {/* href={"https://bit.ly/45TmDev"} */}
                       Select non-member services
-                      
                     </Link>
                   </div>
                 </div>
               </div>
-              {/* card 1 */}
-              {/* card 2 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
                 <div className="relative">
                     <Image src={`/badge.png`} className='absolute left-[50%] top-[50%]' height={50} width={140} alt="badge" style={{transform: "translate(-50%, -50%)"}} />
@@ -232,13 +208,6 @@ export default function ReserveSpot(){
                     </div>
                   </div>
                   <div className="py-5 font-avenir">
-                    {/* <p className="text-sm font-light mb-2">
-                      Choose the Blue Chesse Sports team and we will handle all
-                      the necessary arrangements on your behalf.
-                    </p>
-                    <p className="text-sm font-light mb-3">
-                      Our non-member services package includes:
-                    </p> */}
                     <ul className="list-disc ml-4 mb-4 text-black">
                       <li className="text-sm font-light mb-2">
                         Concierge service to book group accommodation, remote
@@ -266,16 +235,15 @@ export default function ReserveSpot(){
                   <div className="py-4 mt-[7.251rem] text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
-                      href={"https://bit.ly/3S7RhO5"}
-                    >
+                      href={"/stripe/checkout"}
+                      >
+                      {/* href={"https://bit.ly/3S7RhO5"} */}
                       Select Basic Plan
                       
                     </Link>
                   </div>
                 </div>
               </div>
-              {/* card 2 */}
-              {/* card 3 */}
               <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
                 <div className="px-5 pb-5 text-black">
                   <div className="flex font-gotham flex-row items-stretch justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
@@ -287,13 +255,6 @@ export default function ReserveSpot(){
                     </div>
                   </div>
                   <div className="py-5 font-avenir">
-                    {/* <p className="text-sm font-light mb-2">
-                      Choose the Blue Chesse Sports team and we will handle all
-                      the necessary arrangements on your behalf.
-                    </p>
-                    <p className="text-sm font-light mb-3">
-                      Our non-member services package includes:
-                    </p> */}
                     <ul className="list-disc ml-4 mb-4 text-black">
                       <li className="text-sm font-light mb-2">
                         Concierge service to book private accommodation ,remote work space , game tickets and private transfers
@@ -321,8 +282,9 @@ export default function ReserveSpot(){
                   <div className="py-4 mt-16 text-center">
                     <Link
                       className="text-white font-avenir font-semibold text-base  bg-black  focus:ring-4 focus:outline-none focus:ring-[#050708]/50  rounded-lg  px-5 py-2.5 text-center inline-flex items-center  dark:focus:ring-gray-600"
-                      href={"https://bit.ly/3S7RhO5"}
-                    >
+                      href={"/stripe/checkout"}
+                      >
+                      {/* href={"https://bit.ly/3S7RhO5"} */}
                       Select VIP Plan
                       
                     </Link>

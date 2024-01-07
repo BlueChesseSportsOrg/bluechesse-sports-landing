@@ -1,6 +1,5 @@
 'use client';
-import { createCheckoutSession } from '../actions/stripe';
-
+import { createVipCheckoutSession } from '../actions/stripe';
 import * as React from 'react';
 import {
     EmbeddedCheckoutProvider,
@@ -12,14 +11,13 @@ export default function Checkout() {
     const [clientSecret, setClientSecret] = React.useState('');
 
     React.useEffect(() => {
-        // Create a Checkout Session as soon as the page loads
-        createCheckoutSession("vip").then(res => setClientSecret(res))
+        createVipCheckoutSession().then(res => setClientSecret(res))
     }, []);
 
     const options = { clientSecret };
 
     return (
-        <main className="flex min-h-screen flex-col items-center justify-center py-4 bg-black">
+        <div className="flex min-h-screen flex-col items-center justify-center py-4 bg-black">
             <div id="checkout" className='bg-white text-black w-[1000px] max-w-full'>
                 {clientSecret && (
                     <EmbeddedCheckoutProvider
@@ -30,6 +28,6 @@ export default function Checkout() {
                     </EmbeddedCheckoutProvider>
                 )}
             </div>
-        </main>
+        </div>
     );
 }
