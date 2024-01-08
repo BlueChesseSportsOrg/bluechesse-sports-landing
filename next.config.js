@@ -26,9 +26,9 @@ if (isGithubActions) {
 
 const nextConfig = {
    output: "export",
-   experimental: {
-    serverActions: true,
-  },
+  //  experimental: {
+  //   serverActions: true,
+  // },
   //  assetPrefix: assetPrefix,
   assetPrefix: assetPrefix,
   basePath: basePath,

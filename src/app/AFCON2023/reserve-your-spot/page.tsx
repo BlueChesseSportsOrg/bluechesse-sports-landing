@@ -83,7 +83,9 @@ export default function ReserveSpot() {
   const [scaRefDuration, setScaRefDuration] = React.useState('');
 
   useEffect(() => {
-    getScaRef().then((res: any) => setScaRefDuration(res));
+    // getScaRef().then((res: any) => setScaRefDuration(res));
+    let scaValue = getScaRef();
+    setScaRefDuration(scaValue);
   }, []);
   return (
     <div>
