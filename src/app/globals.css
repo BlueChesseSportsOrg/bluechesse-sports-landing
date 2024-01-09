@@ -46,3 +46,7 @@ body {
 
 
 }
+
+.start-section {
+  background: url('../../public/Investing.png') no-repeat center/cover;
+}

@@ -45,8 +45,8 @@ export default function ReserveSpot() {
           <h1 className="text-black font-gotham text-center font-medium md:text-3xl md:leading-normal text-3xl leading-normal mt-8 mb-1">
             This is how the program works
           </h1>
-          <div className="flex flex-row gap-16 flex-wrap lg:flex-nowrap justify-center my-6">
-            <div className="w-full flex flex-col max-w-sm text-center">
+          <div className="flex flex-row gap-3 flex-wrap lg:flex-nowrap justify-center my-6">
+            <div className="w-full lg:w-3/12 lg:flex-auto flex flex-col max-w-sm text-center">
               <div className="text-black">
                 <Image
                   src={`/handshake.png`}
@@ -56,7 +56,7 @@ export default function ReserveSpot() {
                   alt="football fans"
                 />
                 <h6 className="font-bold text-2xl">
-                  Join as an Affiliate
+                  Join as an Affiliate 
                 </h6>
                 <div className="py-5 font-avenir">
                   <p className="text-sm font-light mb-2">
@@ -68,7 +68,16 @@ export default function ReserveSpot() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex flex-col max-w-sm text-center">
+            <div className="pt-[75px] w-fit flex-none hidden lg:block">
+              <Image
+                src={`/60937.png`}
+                width={30}
+                height={30}
+                className='mx-auto my-3'
+                alt="football fans"
+              />
+            </div>
+            <div className="w-full lg:w-5/12 lg:flex-auto flex flex-col max-w-sm text-center">
               <div className="text-black">
                 <Image
                   src={`/rocket.png`}
@@ -89,7 +98,16 @@ export default function ReserveSpot() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex flex-col max-w-sm text-center">
+            <div className="pt-[75px] w-fit flex-none hidden lg:block">
+              <Image
+                src={`/60937.png`}
+                width={30}
+                height={30}
+                className='mx-auto my-3'
+                alt="football fans"
+              />
+            </div>
+            <div className="w-full lg:w-3/12 lg:flex-auto flex flex-col max-w-sm text-center">
               <div className="text-black">
                 <Image
                   src={`/receive.png`}
@@ -122,7 +140,7 @@ export default function ReserveSpot() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#f6f5f4] p-10">
+      <div className="w-full bg-[#f6f5f4] px-8 py-14">
         <div className="container xl:max-w-7xl mx-auto px-4">
           <h1 className="text-black font-gotham text-center font-medium md:text-3xl md:leading-normal text-3xl leading-normal mt-8 mb-1">
             Our Commission plan and products you will promote
@@ -130,7 +148,7 @@ export default function ReserveSpot() {
           <p className="text-black font-avenir font-medium text-center md:text-2xl md:leading-normal text-xl leading-normal mb-8">
             These are Blue Chesse Sports products
           </p>
-          <div className="flex flex-row gap-16 flex-wrap lg:flex-nowrap justify-center">
+          <div className="flex flex-row gap-16 flex-wrap lg:flex-nowrap justify-center mb-8">
             <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
               <div className="px-5 pb-5 text-black">
                 <div className="flex font-gotham flex-row justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
@@ -253,7 +271,7 @@ export default function ReserveSpot() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#f6f5f4] px-8 py-10">
+      <div className="w-full bg-[#f6f5f4] px-8 py-14 border">
         <div className="container xl:max-w-7xl mx-auto">
           <h1 className="text-black font-gotham text-center font-medium md:text-3xl md:leading-normal text-3xl leading-normal mt-8 mb-1">
             Commission plans
@@ -261,7 +279,7 @@ export default function ReserveSpot() {
           <p className="text-black font-avenir font-medium text-center md:text-2xl md:leading-normal text-xl leading-normal mb-8">
             Based on the plan your referrals purchase , you will earn 5% -15% of the package price
           </p>
-          <div className="flex flex-row gap-16 flex-wrap lg:flex-nowrap justify-center">
+          <div className="flex flex-row gap-16 flex-wrap lg:flex-nowrap justify-center mb-8">
             <div className="w-full flex flex-col max-w-sm bg-white border border-white rounded-[12px] shadow">
               <div className="px-5 pb-5 text-black">
                 <div className="flex font-gotham flex-row justify-between pt-6 pb-3 border-[#e9e9ec] border-b-2">
@@ -367,7 +385,7 @@ export default function ReserveSpot() {
           </div>
         </div>
       </div>
-      <div className='w-full bg-[#f6f5f4]'>
+      <div className='w-full bg-[#f6f5f4] start-section'>
         <div className="container xl:max-w-7xl mx-auto px-8">
           <div className="flex flex-row items-center lg:items-stretch lg:flex-nowrap flex-wrap gap-0 lg:min-h-screen">
             <div className="w-full lg:w-7/12 relative lg:flex justify-start items-center relative z-0">
